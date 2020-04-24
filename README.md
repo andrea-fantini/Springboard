@@ -6,7 +6,7 @@ Hi and welcome to my repo! Here I will post mini projects and exercises that I w
 
 
 # List of projects and exercises
-Each folder contains a single excercise:
+Each folder contains a single excercise (links need to be fixed!!)
   - [Empire State Building Exercise](EmpireStateBuilding/README.md) (Unit 2)
  - [London Housing Case Study](LondonHousing/README.md) (Unit 4.3)
  - [Big Mountain Guided Capstone](GuidedCapstone/README.md)
