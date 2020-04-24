@@ -9,7 +9,7 @@ Hi and welcome to my repo! Here I will post mini projects and exercises that I w
 Each folder contains a single excercise:
   - [Empire State Building Exercise](EmpireStateBuilding/README.md) (Unit 2)
  - [London Housing Case Study](LondonHousing/README.md) (Unit 4.3)
- - [Big Mountain Guided Capstone0](GuidedCapstone/README.md)
+ - [Big Mountain Guided Capstone](GuidedCapstone/README.md)
 
 
 # Data
