@@ -6,10 +6,10 @@ Hi and welcome to my repo! Here I will post mini projects and exercises that I w
 
 
 # List of projects and exercises
-
- - [My First Assignment](https://github.com/andrea-fantini/Springboard/blob/master/My%20First%20Assignment.ipynb) (Test assignment)
- - [Empire State Building Exercise](https://github.com/andrea-fantini/Springboard/blob/master/Empire%20state%20building%20simulation.ipynb) (Module 2 I guess)
- - [London Housing Case Study](https://github.com/andrea-fantini/Springboard/blob/master/Unit%204%20Challenge%20-%20Tier%203.ipynb) (Module 4.3)
+Each folder contains a single excercise (links need to be fixed!!)
+  - [Empire State Building Exercise](EmpireStateBuilding/README.md) (Unit 2)
+ - [London Housing Case Study](LondonHousing/README.md) (Unit 4.3)
+ - [Big Mountain Guided Capstone](GuidedCapstone/README.md)
 
 
 # Data
