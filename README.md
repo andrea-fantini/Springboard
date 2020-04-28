@@ -7,8 +7,8 @@ Hi and welcome to my repo! Here I will post mini projects and exercises that I w
 
 # List of projects and exercises
 Each folder contains a single excercise
- - [Empire State Building Exercise]('Empire_State_Building/Empire state building simulation.ipynb') (Unit 2)
- - [London Housing Case Study]('London_Housing/Unit 4 Challenge - Tier 3.ipynb') (Unit 4.3)
+ - [Empire State Building Exercise](Empire_State_Building/Empire%20state%20building%20simulation.ipynb) (Unit 2)
+ - [London Housing Case Study](London_Housing/Unit%204%20Challenge%20-%20Tier%203.ipynb) (Unit 4.3)
  - [Big Mountain Guided Capstone](Ski_Resort/README.md)
 
 
