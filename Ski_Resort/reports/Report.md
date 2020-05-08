@@ -70,9 +70,9 @@ A **linear regression** model was used to predict the Adult Weekend Ticket price
 |Mean Absolute Error|7.0027  |
 
 ## Figures
-![Clustering](/figures/fig1.png)
-![Adult Weekend Price distribution](/figures/fig2.png)
-![Relationship between number of chairs and adult weekend price](/figures/fig3.png)
+![Clustering](figures/fig1.png)
+![Adult Weekend Price distribution](figures/fig2.png)
+![Relationship between number of chairs and adult weekend price](figures/fig3.png)
 
 ## Model Findings
 
