@@ -7,3 +7,7 @@ The transaction history for the year 2017 is downloaded and the following items 
 3. Largest changes between any two days (based on Closing Price)
 4. Average daily trading volume 
 5. Median trading volume
+
+This project folder conatins the Jupyter Notebook as well as the Python script file.
+In order to run it the Quandl API key will need to be stored in a .env file as QUANDL_API_KEY.
+
