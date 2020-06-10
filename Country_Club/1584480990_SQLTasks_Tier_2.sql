@@ -87,7 +87,18 @@ Include in your output the name of the court, and the name of the member
 formatted as a single column. Ensure no duplicate data, and order by
 the member name. */
 
+SELECT DISTINCT CONCAT( m.`firstname` , " ", m.`surname` ) AS `member_name` , f.`name` AS `facility_name`
+FROM `Bookings` AS b
+LEFT JOIN `Members` AS m ON m.`memid` = b.`memid`
+LEFT JOIN `Facilities` AS f ON f.`facid` = b.`facid`
+WHERE b.`facid`
+IN (
 
+SELECT `facid`
+FROM `Facilities`
+WHERE `name` LIKE 'Tennis Court%'
+)
+ORDER BY m.`firstname`
 /* Q8: Produce a list of bookings on the day of 2012-09-14 which
 will cost the member (or guest) more than $30. Remember that guests have
 different costs to members (the listed costs are per half-hour 'slot'), and
