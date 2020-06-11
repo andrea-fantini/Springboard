@@ -93,7 +93,6 @@ LEFT JOIN `Members` AS m ON m.`memid` = b.`memid`
 LEFT JOIN `Facilities` AS f ON f.`facid` = b.`facid`
 WHERE b.`facid`
 IN (
-
 SELECT `facid`
 FROM `Facilities`
 WHERE `name` LIKE 'Tennis Court%'
@@ -105,6 +104,21 @@ different costs to members (the listed costs are per half-hour 'slot'), and
 the guest user's ID is always 0. Include in your output the name of the
 facility, the name of the member formatted as a single column, and the cost.
 Order by descending cost, and do not use any subqueries. */
+
+SELECT f.`name` AS `facility_name`
+       , Concat(m.`firstname`, "", m.`surname`) AS `member_name`
+       , (CASE WHEN  b.`memid` = 0 THEN f.`guestcost` * b.`slots`
+               ELSE f.`membercost` * b.`slots` END) AS 'cost'
+FROM   `Bookings` AS b
+       LEFT JOIN `Facilities` AS f
+              ON b.facid = f.facid
+       LEFT JOIN `Members` AS m
+              ON b.memid = m.memid
+WHERE  Date(`starttime`) = '2012-09-14'
+              AND ((CASE WHEN  b.`memid` = 0 THEN f.`guestcost` * b.`slots`
+                      ELSE f.`membercost` * b.`slots` END) > 30)
+ORDER BY `cost` DESC
+
 
 
 /* Q9: This time, produce the same result as in Q8, but using a subquery. */
