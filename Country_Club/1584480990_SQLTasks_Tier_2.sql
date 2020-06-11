@@ -122,6 +122,22 @@ ORDER BY `cost` DESC
 
 
 /* Q9: This time, produce the same result as in Q8, but using a subquery. */
+SELECT `facility_name`, `member_name`, `cost`
+FROM (SELECT f.`name` AS `facility_name`
+       , Concat(m.`firstname`, "", m.`surname`) AS `member_name`
+       , b.`starttime` AS `starttime`
+       , (CASE WHEN  b.`memid` = 0 THEN f.`guestcost` * b.`slots`
+               ELSE f.`membercost` * b.`slots` END) AS 'cost'
+FROM   `Bookings` AS b
+       LEFT JOIN `Facilities` AS f
+              ON b.facid = f.facid
+       LEFT JOIN `Members` AS m
+              ON b.memid = m.memid
+            ) AS cost_table
+WHERE  Date(`starttime`) = '2012-09-14' AND `cost` > 30
+ORDER BY `cost` DESC
+
+
 
 
 /* PART 2: SQLite
