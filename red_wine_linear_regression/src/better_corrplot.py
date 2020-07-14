@@ -1,8 +1,7 @@
 ## Easier to visualize Correlation plot
 ## By calling corrplot() on a correlation matrix (ie. df.corr()) it will display the heatmap with the size of each tile proportional to the correlation value. It makes it easier to visualize
 ## taken  from https://www.kaggle.com/drazen/heatmap-with-sized-markers
-
-
+## also available as https://pypi.org/project/heatmapz/
 from matplotlib import pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -10,6 +9,7 @@ import numpy as np
 
 
 def heatmap(x, y, **kwargs):
+
     if 'color' in kwargs:
         color = kwargs['color']
     else:
